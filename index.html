@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplos Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Propriedade ‘display’</h1>
+    <p class="txt1">
+        A propriedade <b>display</b> define como um elemento no HTML deve ser exibido na sua página web. Ela possui
+        diversos atributos, cada um com um comportamento específico.
+        <br>
+        <br>
+        Cada elemento HTML é representado por uma caixa que contém o conteúdo do elemento e determina a quantidade de
+        espaçamento em torno desse conteúdo. A propriedade CSS display especifica como esta caixa deve aparecer na
+        página web
+        em relação a outros elementos, bem como o comportamento de seus elementos filhos (ou seja, os elementos dentro
+        dela). No CSS, um elemento pode ser um dos dois “níveis”: <b><i>Block</i></b> ou <b><i>Inline</i></b>.
+
+        <br>
+        <br>
+        Os elementos que possuem o display do tipo <b><i>Block</i></b>, ocupa todo o espaço da largura disponível na
+        página web.
+        Os elementos <b>&lt; div &gt;</b> e <b>&lt p &gt;</b> são exemplos de elementos que por padrão são do display
+        <b><i>Block</i></b>.
+        <br>
+        <br>
+        Já os elementos de display <b><i>Inline</i></b> ocupa apenas o espaço necessário para apresentar o conteudo do
+        elemento, ou seja, possibilitando que tenha mais de um elemento
+        de display <b><i>Inline</i></b> na mesma linha. <b>&lt; span &gt;</b>, <b> &lt; b &gt;</b> e <b>&lt; a &gt;</b>
+        são exemplos de elementos desse display.
+    </p>
+    <h2>Exemplo do espaço ocupado por um div e span</h2>
+    <div class="display_padrao">
+        <p>
+
+        </p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NWOgmWK"
+            data-user="lLeoAlmeida"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/lLeoAlmeida/pen/NWOgmWK">
+                    Untitled</a> by Leo Almeida (<a href="https://codepen.io/lLeoAlmeida">@lLeoAlmeida</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </div>
+
+    <h2>CSS <i>display:inline</i> </h2>
+    <p class="txt1">
+        Foi removido as propriedades <b><i>Padding</i></b> e <b><i>Margin</i></b> para perceber melhor o efeito do
+        display:inline. Além disso, a largura e a altura dos elementos inline são determinadas pelo conteúdo que eles
+        contêm.<b>Você não pode definir suas larguras e alturas no CSS.</b>
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwegOvb" data-user="lLeoAlmeida"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/lLeoAlmeida/pen/RwegOvb">
+                Display:inline</a> by Leo Almeida (<a href="https://codepen.io/lLeoAlmeida">@lLeoAlmeida</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <h2>CSS <i>display:block</i></h2>
+    <p class="txt1">
+        O <i>display:block</i> torna qualquer elemento em um "bloco". Os elementos iniciam uma nova
+        linha e abrangem toda a largura da página, como os elementos <b>&lt; div &gt;</b> se comportam. Há também
+        quebras de linha antes e depois desses elementos.
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOBRJYP" data-user="lLeoAlmeida"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/lLeoAlmeida/pen/gOBRJYP">
+                Untitled</a> by Leo Almeida (<a href="https://codepen.io/lLeoAlmeida">@lLeoAlmeida</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <h2>CSS <i>Display:inline-block</i></h2>
+    <p class="txt1">
+        O valor <i>inline-block</i> é um híbrido de inline e block. Exibição de elementos atribuídos: o bloco inline
+        aparece na
+        mesma linha com outros elementos inline, uma característica dos elementos inline. No entanto, os elementos de
+        bloco inline também são como elementos de bloco em que você pode <b>alterar suas larguras e alturas com CSS.</b>
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwegmWP" data-user="lLeoAlmeida"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/lLeoAlmeida/pen/RwegmWP">
+                CSS Display: inline-block</a> by Leo Almeida (<a href="https://codepen.io/lLeoAlmeida">@lLeoAlmeida</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <h2>CSS <i>Display: list-item</i></h2>
+    <p class="txt1">
+        Exibição de elementos atribuídos: item de lista se comporta como elementos <b> &lt; li &gt;</b>. O elemento
+        inteiro torna-se um
+        elemento de nível de bloco, o texto interno torna-se seu próprio elemento embutido e um marcador é
+        adicionado.
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxyrNPv" data-user="lLeoAlmeida"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/lLeoAlmeida/pen/xxyrNPv">
+                Display: list-item</a> by Leo Almeida (<a href="https://codepen.io/lLeoAlmeida">@lLeoAlmeida</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <p class="txt1">
+        Note que sem a regra margin-left: 30px; nossos marcadores cairiam fora da janela de visualização. Aumentei a
+        margem esquerda para torná-los visíveis.
+        Adicione a regra list-style-position: inside; para colocar os marcadores dentro do elemento de item da lista:
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LYgLoJp" data-user="lLeoAlmeida"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/lLeoAlmeida/pen/LYgLoJp">
+                Display: list-item2</a> by Leo Almeida (<a href="https://codepen.io/lLeoAlmeida">@lLeoAlmeida</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <h2>CSS <i>display:none</i></h2>
+    <p class="txt1">
+        <i>display:none</i> remove o elemento selecionado (e todos os conteudos dentro dele) da página. Isso faz com que
+        os demais
+        elementos se comportem como se esse elemento não existisse.
+        <br>
+        Neste exemplo, display: none é aplicado ao segundo elemento <b>&lt; div &gt;</b> e ao segundo elemento e <b>&lt
+            span &gt;</b>.
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwEWONm" data-user="lLeoAlmeida"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/lLeoAlmeida/pen/VwEWONm">
+                Display: none</a> by Leo Almeida (<a href="https://codepen.io/lLeoAlmeida">@lLeoAlmeida</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p class="txt1">
+        Para ocultar um elemento sem afetar o layout da página ao inves de usar o <i>display:none</i>, use a propriedade
+        de <i>visibility: hidden;</i>
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOBRJNG" data-user="lLeoAlmeida"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/lLeoAlmeida/pen/gOBRJNG">
+                Untitled</a> by Leo Almeida (<a href="https://codepen.io/lLeoAlmeida">@lLeoAlmeida</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    
+    <h2>CSS <i>display:none</h2>
+    <p class="txt1">
+
+    </p>
+</body>
+
+</html>
